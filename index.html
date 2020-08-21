@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Buxton Form</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+
+
+	<div class="page-wrapper">
+		<div class="page-left">
+			<div class="logo">Buxton</div>
+			<h1>Sign up today to receive your weekly fill of all the best mineral water gossip.</h1>
+			<img class="waterfall-img" src="images/waterfalls.png">
+		</div>
+		<div class="page-right">
+			<form action="thank-you.php" method="post">
+				<h2>Subscribe Now</h2>
+				<label for="name">Your Name</label>
+				<input type="text" name="name" placeholder="Name" required>
+				<label for="how">How did you hear about us?</label>
+				<select name="how" required>
+					<option selected disabled value="">Select an option</option>
+					<option value="Google">Google</option>
+					<option value="Buxton Website">Buxton Website</option>
+					<option value="Social Media">Social Media</option>
+					<option value="Other">Other</option>
+				</select>
+				<label for="email">Your Email</label>
+				<input type="email" name="email" placeholder="Email" required>
+				<label for="phone">Your Phone</label>
+				<input type="tel" name="phone" placeholder="Phone" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" title="Please use a valid phone number" required>
+				<label for="comments">Your Comments</label>
+				<textarea name="comments" placeholder="Comments" required></textarea>
+				<input class="submit-btn" type="submit" name="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
